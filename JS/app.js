@@ -77,7 +77,7 @@ if (subscribed) {
 else if (loggedIn && !subscribed) {
   console.log('Upgrade you cheap fuck')
 }
-else if (!loggedIn && subscribed) {
+else if (!loggedIn && subscribed) {           
   console.log('goofy ahhh log in retard')
 }
 else {
@@ -88,19 +88,24 @@ else {
 
 // you at the apple store
 
-let cash = 40
+let cash = 1320
 let price = 1320
+let isStoreOpen = true
 let change = cash - price
 let difference = price - cash
 
-if (cash >= price) {
-  console.log(`Nice, your broke ass just bought some metal and some glass for 1300 dollars! thanks for shopping at apple, by the way your change is ${change} dollars`)
+if (!isStoreOpen) {
+  console.log("get out of the store it's closed bozo")
 }
 else if (cash === price) {
   console.log('Here you go, also by the way why would you come into the apple store with the EXACT amount of money you need??')
 }
-
+else if (cash >= price) {
+  console.log(`Nice, your broke ass just bought some metal and some glass for 1300 dollars! thanks for shopping at apple, by the way your change is ${change} dollars`)
+}
 else {
   console.log(`aw hell naw mf you walked into the apple store with ${cash} dollars, you need ${difference} more you broke fuck`)
 }
+
+
 
