@@ -108,4 +108,42 @@ else {
 }
 
 
+const cashInWallet = '50'
+const costOfBattlePass = '30'
+const isServerDown = false;
+function doIHaveEnoughForFortniteBattlePass () {
+
+  if (cashInWallet > costOfBattlePass && !isServerDown) {
+    console.log('you have enough for the battle pass')
+  }
+  else if (isServerDown) {
+    console.log('bozo the server is down')
+  }
+  else {
+    console.log('sorry, you dont have enough for the battle pass')
+  }
+}
+
+doIHaveEnoughForFortniteBattlePass();
+
+
+let isObese = true;
+isObese ? 'unhealthy' : 'healthy'
+
+let hot = true
+hot ? console.log('pretty hot') : console.log('too cold')
+//use of ternarary operators, better than if else statements because it's on one line
+
+//example on line 71 into a ternaray operator
+
+let subbed = true
+let login = true
+subbed && login ? console.log('heres your video bozo') : console.log('no video for u')
+
+let fardcash = 2000
+let fardprice = 40
+let isFardStoreOpen = true
+
+let str = cash >= price && isFardStoreOpen ? console.log("Give receipt") : console.log("Don't give receipt")
+console.log(str)
 
